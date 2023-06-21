@@ -39,14 +39,14 @@ function App() {
     if (bmi > 30) return <span className="text-red-700"> อ้วนมาก / โรคอ้วนระดับ 3</span>;
   };
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center">
+    <div className="bg-white w-screen h-screen flex flex-col items-center justify-center">
       <section>
         <h1 className="text-6xl font-bold text-center mb-5">BMI Calculator</h1>
         <p className="text-xl font-semibold text-center pb-2">คำนวณดัชนีมวลกาย</p>
         <div className="w-auto h-auto">
           <div className="flex flex-col items-center m-2 p-2">
             <label htmlFor="weight" className="block text-center">
-              <span className="block text-lg font-medium text-slate-700 pb-2">Weight (Kg)</span>
+              <span className="block text-lg font-medium pb-2">Weight (Kg)</span>
               <input
                 type="number"
                 name="weight"
@@ -61,7 +61,7 @@ function App() {
           </div>
           <div className="flex flex-col items-center m-2 p-2">
             <label htmlFor="height" className="block text-center">
-              <span className="block text-lg font-medium text-slate-700 pb-2">Height (Cm)</span>
+              <span className="block text-lg font-medium pb-2">Height (Cm)</span>
               <input
                 type="number"
                 name="height"
